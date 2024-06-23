@@ -1,0 +1,102 @@
+.wrapper {
+  width: 100%;
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.title {
+  font-weight: 700;
+  line-height: var(--line-height-base);
+  color: var(--font-color);
+}
+
+.title_decorated {
+  position: relative;
+  padding-left: var(--gap-10);
+  font-size: var(--font-size-m);
+  letter-spacing: -0.1px;
+  z-index: 1;
+}
+
+.decor {
+  &::before {
+    position: absolute;
+    bottom: -60%;
+    left: 0;
+    width: 36px;
+    height: 36px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    content: '';
+    z-index: -1;
+  }
+}
+
+.btn {
+  padding: var(--gap-12) var(--gap-26);
+  padding: 12px 25px 12px 26px;
+  font-weight: 700;
+  font-size: var(--font-size-base);
+  line-height: 148%;
+  color: var(--font-color);
+}
+
+.btn_colored,
+.btn_ghost {
+  position: relative;
+  transition: background-color var(--transition), transform var(--transition);
+  &:hover,
+  &:active {
+    background-color: var(--primary-color-dark);
+  }
+  &:active {
+    top: 1px;
+    box-shadow: none;
+  }
+  &:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--primary-color-dark);
+  }
+}
+
+.btn_colored {
+  background-color: var(--primary-color);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+
+.btn_ghost {
+  box-shadow: 0 4px 4px 0 transparent;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.socials__link {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: filter var(--transition);
+  &:hover {
+    filter: brightness(0) saturate(100%) invert(66%) sepia(34%) saturate(6272%) hue-rotate(10deg) brightness(100%)
+      contrast(101%);
+  }
+}
+
+.socials__link_github {
+  background-image: url('../assets/icons/git.svg');
+}
+
+.socials__link_instagram {
+  background-image: url('../assets/icons/instagram.svg');
+}
+
+.socials__link_facebook {
+  background-image: url('../assets/icons/facebook.svg');
+}
