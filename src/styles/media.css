@@ -1,0 +1,98 @@
+@media (max-width: 1440px) {
+  .promo__aside {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .benefits__wrapper {
+    padding: 100px 20px 100px 20px;
+  }
+  .benefits__content {
+    grid-template-columns: repeat(2, 320px);
+  }
+  .text_next-line {
+    content: '\A';
+    white-space: pre;
+  }
+}
+
+@media (max-width: 768px) {
+  .promo__wrapper {
+    max-width: 400px;
+  }
+  .promo__title {
+    font-size: var(--font-size-2xl);
+  }
+  .benefits__content {
+    grid-template-columns: 100%;
+    gap: var(--gap-46);
+  }
+}
+
+@media (max-width: 440px) {
+  .wrapper {
+    padding: 0 var(--gap-10);
+  }
+  .promo {
+    background: url('../assets/img/bg-mobile.jpg') 100% / cover no-repeat;
+  }
+  .promo__menu-icon {
+    top: var(--gap-20);
+    right: var(--gap-20);
+  }
+  .promo__wrapper {
+    max-width: 275px;
+  }
+  .promo__title {
+    padding-bottom: var(--gap-32);
+    font-size: var(--font-size-mobile);
+    line-height: 150%;
+  }
+  .menu__navigation {
+    max-width: 250px;
+  }
+  .menu__list {
+    padding-left: var(--gap-20);
+  }
+  .section-title {
+    padding-left: 0;
+    gap: 11px;
+  }
+  .section-title__title {
+    font-size: var(--font-size-xl);
+  }
+  .section-title__title_with-gap {
+    padding-top: 16px;
+  }
+  .benefits__wrapper {
+    padding: 60px 0;
+    gap: 45px;
+  }
+  .benefits__content-column-wrapper {
+    gap: var(--gap-14);
+  }
+  .section-title__divider {
+    margin-top: 0;
+  }
+  .content_decorated {
+    gap: var(--gap-22);
+  }
+  .content_min-gap {
+    gap: var(--gap-4);
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+  .promo {
+    background: url('../assets/img/bg-2x.jpg') center / cover no-repeat;
+    @media (max-width: 440px) {
+      background: url('../assets/img/bg-mobile-2x.jpg') 100% / cover no-repeat;
+    }
+  }
+}

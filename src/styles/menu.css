@@ -1,0 +1,128 @@
+.menu {
+  width: 100%;
+  height: 100%;
+}
+
+.menu__navigation {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  max-width: 345px;
+  height: 100%;
+  background-color: var(--primary-color);
+  transition: left var(--transition-slow);
+  z-index: 3;
+}
+
+.menu__navigation_open {
+  left: 0;
+}
+
+.menu__list {
+  width: 100%;
+  max-width: 255px;
+  padding-top: 140px;
+  padding-left: var(--gap-40);
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.menu__link {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-20);
+  font-weight: 700;
+  font-size: var(--font-size-xl);
+  line-height: 150%;
+  color: var(--white-color);
+  border-bottom: 2px solid transparent;
+  text-transform: uppercase;
+  transition: color var(--transition);
+  &::before {
+    display: block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid var(--font-color);
+    border-radius: 50%;
+    transition: background-color var(--transition-slow);
+    content: '';
+  }
+  &:hover {
+    &::before {
+      background-color: var(--font-color);
+    }
+  }
+  &:focus-visible {
+    outline: none;
+    box-shadow: var(--focus-visible-dark);
+  }
+}
+
+.menu__item {
+  &::after {
+    display: block;
+    width: 215px;
+    height: 2px;
+    background-color: var(--font-color);
+    transition: transform var(--transition-slow);
+    transform: scale3d(0, 1, 1);
+    transform-origin: 50% 50%;
+    content: '';
+  }
+  &:hover {
+    &::after {
+      transform: scale3d(1, 1, 1);
+    }
+  }
+}
+
+.menu__close-icon {
+  position: absolute;
+  top: var(--gap-24);
+  right: 20px;
+  width: 29px;
+  height: 29px;
+  transition: transform var(--transition);
+  cursor: pointer;
+  &::after,
+  &::before {
+    position: absolute;
+    top: var(--gap-12);
+    left: -10px;
+    display: block;
+    width: 39px;
+    height: 4px;
+    background: var(--font-color);
+    border-radius: 10px;
+    content: '';
+  }
+  &::after {
+    transform: rotate(-45deg);
+  }
+  &::before {
+    transform: rotate(45deg);
+  }
+  &:hover {
+    transform: var(--btn-transform);
+  }
+  &:focus-visible {
+    outline: none;
+    box-shadow: var(--focus-visible-dark);
+  }
+}
+
+.menu__socials {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  gap: 15px;
+}
+
+.menu__socials-link {
+  &:focus-visible {
+    box-shadow: var(--focus-visible-light);
+  }
+}

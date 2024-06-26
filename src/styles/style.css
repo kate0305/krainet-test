@@ -1,12 +1,26 @@
 :root {
-  font-family: Poppins, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-optical-sizing: auto;
   font-weight: 500;
+  font-style: normal;
+  font-variation-settings: 'wdth' 100;
 
   background-color: #fff;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  scroll-behavior: smooth;
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+    border-radius: 10px;
+  }
 
   /* fonts */
   --line-height-base: 100%;
@@ -16,16 +30,28 @@
   --font-size-base: 14px;
   --font-size-m: 16px;
   --font-size-l: 20px;
-  --font-size-xl: 36px;
-  --font-size-2xl: 48px;
+  --font-size-xl: 24px;
+  --font-size-mobile: 26px;
+  --font-size-2xl: 36px;
+  --font-size-3xl: 48px;
 
   /* animation */
-  --transition: 0.2s ease;
+  --transition: 0.3s ease;
+  --transition-slow: 0.5s ease;
+  --btn-transform: scale(1.2);
 
   /* colors */
   --primary-color: #ffa501;
+  --primary-color-light: #ffc864;
+  --primary-color-dark: #e39300;
   --font-color: #000;
   --white-color: #fff;
+  --burger-color: #151812;
+
+  /* decor */
+  --focus-visible: 0 0 0 3px var(--primary-color-dark);
+  --focus-visible-dark: 0 0 0 2px var(--font-color);
+  --focus-visible-light: 0 0 0 2px var(--white-color);
 
   /* gaps */
   --gap-2: 2px;
