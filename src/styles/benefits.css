@@ -1,6 +1,6 @@
 .benefits__wrapper {
   width: 100%;
-  padding: 130px 89px 120px 65px;
+  padding: 130px 89px 0 65px;
   display: flex;
   flex-direction: column;
   gap: 65px;
