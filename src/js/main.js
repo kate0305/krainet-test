@@ -9,6 +9,8 @@ import '../styles/contacts.css';
 import '../styles/media.css';
 
 import { openMenu, closeMenu } from '../js/open-menu';
+import { handleForm } from '../js/handle-form';
 
 openMenu();
 closeMenu();
+handleForm();

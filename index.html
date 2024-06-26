@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <link rel="icon" sizes="any" href="/favicon.ico">
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <link rel="apple-touch-icon" sizes="180x180" href="src/assets/favicon/apple-touch-icon.png">
@@ -215,23 +215,38 @@
               </li>
             </ul>
             <span class="text text_margin">Или оставьте ваши данные и я сама вам напишу:</span>
-            <form action="#" class="contacts__form">
+            <form novalidate class="contacts__form">
               <div class="contacts__input-wrapper">
-                <input type="text" name="name" id="name" class="contacts__input">
                 <label for="name" class="contacts__label">Ваше имя</label>
+                <input type="text" name="name" id="name" required class="contacts__input">
+                <span class="contacts__input_err" aria-live="polite"></span>
               </div>
               <div class="contacts__input-wrapper">
-                <input type="email" name="mail" id="mail" class="contacts__input">
                 <label for="mail" class="contacts__label">Ваша почта</label>
+                <input type="email" name="mail" id="mail" required class="contacts__input">
+                <span class="contacts__input_err" aria-live="polite"></span>
               </div>
               <div class="contacts__textarea-wrapper">
-                <textarea name="message" id="message" class="contacts__input contacts__textarea"></textarea>
                 <label for="message" class="contacts__label">Ваше сообщение</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  required
+                  class="contacts__input contacts__textarea"
+                ></textarea>
+                <span class="contacts__input_err" aria-live="polite"></span>
               </div>
               <div class="contacts__form-footer">
-                <button type="submit" class="btn btn_colored contacts__btn">Отправить сообщение</button>
+                <button class="btn btn_colored contacts__btn">Отправить сообщение</button>
                 <div class="contacts__policy">
-                  <input type="checkbox" name="policy" id="policy" class="contacts__input contacts__checkbox">
+                  <input
+                    type="checkbox"
+                    name="policy"
+                    id="policy"
+                    value="true"
+                    required
+                    class="contacts__input contacts__checkbox"
+                  >
                   <label for="policy" class="contacts__policy-label"
                     >Я согласен(а) с <a href="#" class="text_link">политикой конфиденциальности</a></label
                   >
