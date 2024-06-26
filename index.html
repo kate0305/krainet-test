@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <link rel="icon" sizes="any" href="/krainet-test/assets/favicon-CXMcdtE1.ico">
     <link rel="icon" type="image/svg+xml" href="/krainet-test/favicon.svg">
     <link rel="apple-touch-icon" sizes="180x180" href="/krainet-test/assets/apple-touch-icon-R4b5C8Uy.png">
@@ -14,8 +14,8 @@
     >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Портфолио</title>
-    <script type="module" crossorigin src="/krainet-test/assets/index-Bw36Ekqb.js"></script>
-    <link rel="stylesheet" crossorigin href="/krainet-test/assets/index-CR86A_Pm.css">
+    <script type="module" crossorigin src="/krainet-test/assets/index-BgwvDTCs.js"></script>
+    <link rel="stylesheet" crossorigin href="/krainet-test/assets/index-OB8X-E6H.css">
   </head>
   <body>
     <main>
@@ -49,7 +49,7 @@
               <li class="menu__item"><a href="#" class="menu__link">Мои навыки</a></li>
               <li class="menu__item"><a href="#" class="menu__link">Мои работы</a></li>
               <li class="menu__item"><a href="#" class="menu__link">Прайс-лист</a></li>
-              <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+              <li class="menu__item"><a href="#contacts" class="menu__link">Контакты</a></li>
             </ul>
             <ul class="socials menu__socials">
               <li>
@@ -113,7 +113,7 @@
                     </div>
                     <p class="content__text">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                      labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                      labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                       eiusmo.
                     </p>
                   </div>
@@ -127,7 +127,7 @@
                     </div>
                     <p class="content__text">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                      labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                      labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                       eiusmo.
                     </p>
                   </div>
@@ -148,7 +148,7 @@
                     </div>
                     <p class="content__text">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                      labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                      labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                       eiusmo.
                     </p>
                   </div>
@@ -164,7 +164,7 @@
                     </div>
                     <p class="content__text">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                      labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                      labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                       eiusmo.
                     </p>
                   </div>
@@ -174,7 +174,91 @@
           </div>
         </div>
       </section>
-    </main>
 
+      <section id="contacts" class="contacts">
+        <div class="wrapper contacts__wrapper">
+          <div class="contacts__photo">
+            <picture>
+              <source
+                srcset="/krainet-test/assets/my-photo-DsQ0zBYS.jpg 1x, /krainet-test/assets/my-photo-2x-DI2vMWAK.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <img alt="my photo" src="/krainet-test/assets/my-photo-DsQ0zBYS.jpg" class="contacts__img" />
+            </picture>
+          </div>
+          <div class="contacts__content">
+            <div class="section-title section-title_left">
+              <h4 class="title decor title_decorated">Контакты</h4>
+              <h2 class="title section-title__title contacts__title">Свяжитесь со мной</h2>
+              <span class="section-title__divider section-title__divider_left"></span>
+            </div>
+            <span class="text text_margin">Любым удобным для вас способом:</span>
+            <ul class="socials contacts__socials">
+              <li>
+                <a
+                  class="socials__link contacts__socials-link socials__link_facebook"
+                  href="https://www.facebook.com"
+                  target="_blank"
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="socials__link contacts__socials-link socials__link_telegram"
+                  href="https://web.telegram.org/a/"
+                  target="_blank"
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="socials__link contacts__socials-link socials__link_instagram"
+                  href="https://www.instagram.com"
+                  target="_blank"
+                ></a>
+              </li>
+            </ul>
+            <span class="text text_margin">Или оставьте ваши данные и я сама вам напишу:</span>
+            <form novalidate class="contacts__form">
+              <div class="contacts__input-wrapper">
+                <label for="name" class="contacts__label">Ваше имя</label>
+                <input type="text" name="name" id="name" required class="contacts__input">
+                <span class="contacts__input_err" aria-live="polite"></span>
+              </div>
+              <div class="contacts__input-wrapper">
+                <label for="mail" class="contacts__label">Ваша почта</label>
+                <input type="email" name="mail" id="mail" required class="contacts__input">
+                <span class="contacts__input_err" aria-live="polite"></span>
+              </div>
+              <div class="contacts__textarea-wrapper">
+                <label for="message" class="contacts__label">Ваше сообщение</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  required
+                  class="contacts__input contacts__textarea"
+                ></textarea>
+                <span class="contacts__input_err" aria-live="polite"></span>
+              </div>
+              <div class="contacts__form-footer">
+                <button class="btn btn_colored contacts__btn">Отправить сообщение</button>
+                <div class="contacts__policy">
+                  <input
+                    type="checkbox"
+                    name="policy"
+                    id="policy"
+                    value="true"
+                    required
+                    class="contacts__input contacts__checkbox"
+                  >
+                  <label for="policy" class="contacts__policy-label"
+                    >Я согласен(а) с <a href="#" class="text_link">политикой конфиденциальности</a></label
+                  >
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
   </body>
 </html>
