@@ -1,0 +1,88 @@
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.content_decorated {
+  position: relative;
+  gap: var(--gap-12);
+  &::before {
+    position: absolute;
+    top: var(--gap-18);
+    left: -42px;
+    width: 42px;
+    height: 1px;
+    background-color: var(--font-color);
+    content: '';
+  }
+}
+
+.content__header {
+  position: relative;
+}
+
+.content__header-title {
+  padding-left: 56px;
+}
+
+.content__header-decor {
+  &::after {
+    position: absolute;
+    content: '';
+  }
+  &::before {
+    top: 0;
+  }
+}
+
+.content__header-decor_univer {
+  &::after {
+    width: 20px;
+    height: 25px;
+    top: var(--gap-14);
+    left: 17px;
+    background: url('../assets/icons/university.svg') center / contain no-repeat;
+  }
+}
+
+.content__header-decor_course {
+  &::after {
+    width: 25px;
+    height: 24px;
+    top: var(--gap-16);
+    left: 15px;
+    background: url('../assets/icons/courses.svg') center / contain no-repeat;
+  }
+}
+
+.content__header-decor_dev {
+  &::after {
+    width: 25px;
+    height: 25px;
+    top: var(--gap-14);
+    left: 17px;
+    background: url('../assets/icons/dev.svg') center / contain no-repeat;
+  }
+}
+
+.content__header-decor_designer {
+  &::after {
+    width: 25px;
+    height: 25px;
+    top: 15px;
+    left: 13px;
+    background: url('../assets/icons/designer.svg') center / contain no-repeat;
+  }
+}
+
+.content-subtitle,
+.content__text {
+  font-size: var(--font-size-s);
+  line-height: 150%;
+}
+
+.content__text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
