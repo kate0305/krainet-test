@@ -81,12 +81,29 @@
 .menu__close-icon {
   position: absolute;
   top: var(--gap-24);
-  right: 25px;
+  right: 20px;
   width: 29px;
   height: 29px;
-  background: url('../assets/icons/close.svg') center / cover no-repeat;
   transition: transform var(--transition);
   cursor: pointer;
+  &::after,
+  &::before {
+    position: absolute;
+    top: var(--gap-12);
+    left: -10px;
+    display: block;
+    width: 39px;
+    height: 4px;
+    background: var(--font-color);
+    border-radius: 10px;
+    content: '';
+  }
+  &::after {
+    transform: rotate(-45deg);
+  }
+  &::before {
+    transform: rotate(45deg);
+  }
   &:hover {
     transform: var(--btn-transform);
   }
