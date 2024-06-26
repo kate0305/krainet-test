@@ -2,6 +2,8 @@
 
 ## Description
 Test Task for Krainet
+- [Deploy](https://kate0305.github.io/krainet-test/)
+- The Fibonacci Task in the file ***find-fibonacci-number.js***
 
 ## Downloading
 
