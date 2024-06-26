@@ -10,7 +10,9 @@ import '../styles/media.css';
 
 import { openMenu, closeMenu } from '../js/open-menu';
 import { handleForm } from '../js/handle-form';
+import { findFibonacciNumber } from '../js/find-fibonacci-number';
 
 openMenu();
 closeMenu();
 handleForm();
+findFibonacciNumber();
