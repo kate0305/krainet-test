@@ -1,5 +1,5 @@
 {
-  "homepage": "https://kate0305.github.io/krainet-test",
+  "homepage": "https://kate0305.github.io/krainet-test/",
   "name": "krainet-test",
   "private": true,
   "version": "0.0.0",
@@ -9,7 +9,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "gh-pages": "^6.1.1",
