@@ -11,6 +11,17 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
+  scroll-behavior: smooth;
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+    border-radius: 10px;
+  }
+
   /* fonts */
   --line-height-base: 100%;
   --line-height-m: 125%;
@@ -20,6 +31,7 @@
   --font-size-m: 16px;
   --font-size-l: 20px;
   --font-size-xl: 24px;
+  --font-size-mobile: 26px;
   --font-size-2xl: 36px;
   --font-size-3xl: 48px;
 

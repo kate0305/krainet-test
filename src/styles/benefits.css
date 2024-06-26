@@ -39,3 +39,9 @@
     content: '';
   }
 }
+
+.benefits__content-column-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
