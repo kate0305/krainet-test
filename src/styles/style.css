@@ -47,6 +47,8 @@
   --font-color: #000;
   --white-color: #fff;
   --burger-color: #151812;
+  --link-color: #2306d6;
+  --color-danger: #d63d06;
 
   /* decor */
   --focus-visible: 0 0 0 3px var(--primary-color-dark);

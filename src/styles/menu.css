@@ -121,7 +121,8 @@
   gap: 15px;
 }
 
-.menu__socials-link {
+.menu__socials-link,
+.contacts__socials-link {
   &:focus-visible {
     box-shadow: var(--focus-visible-light);
   }
